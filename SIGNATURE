@@ -1,0 +1,62 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.70.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 294505f858f11dd062e9916e3f50d88210a9ef54 CONTRIBUTING
+SHA1 0299bd2b05a858378f20878e338ac66ac2c453bd COPYRIGHT
+SHA1 45e9f2d5a91a78e81745f0b45a0a67abd518b38d CREDITS
+SHA1 92fdbf5e8665d16c4a9d2d57d1ff0b6bba70ebcb Changes
+SHA1 ec5a7b4f3023f03ebf821b57690758f7e6f3ae2a LICENSE
+SHA1 bfc5788fbe86d2b62853f4441c961f751bafcb56 MANIFEST
+SHA1 1c1f4512e7114e08cdafa7d57ad0ae2e4673e472 META.json
+SHA1 9bc07a11e18babd94a6099aa523fb5ea386671f3 META.ttl
+SHA1 0072f2d2a773f8d47aa5e48fa56bb7be81d3e240 META.yml
+SHA1 19bd5799ffb9e70929554303e5fee7df97f78723 Makefile.PL
+SHA1 8b1b5f6a85a948a1b76f6d343670d08a2879cb29 README
+SHA1 72ddfd0304a8e1c9bed4e1eb34cd1f010f9dc696 dist.ini
+SHA1 a38d6a4604c601415d4b2135e9447ff94b3636ce examples/changelog.pl
+SHA1 7725ba71ddd45085a21c7cbb30186e9fb3ea4d0c examples/credits.pl
+SHA1 f37c95bd65b4b7f6a6671680e2385a09549f024b examples/gnome-data.pl
+SHA1 f4a04524254b5695b5f35620d1de67462b712041 examples/moose-data.pl
+SHA1 67a7f017978c49603c7542929e34cb8d62b067e2 examples/simple.pl
+SHA1 f01c329676bbfa7b3ef577a0edda4d714d2f0883 lib/RDF/DOAP.pm
+SHA1 646057a6433e360ddb264ff652d2b2ffaba8b918 lib/RDF/DOAP/Change.pm
+SHA1 056bef9443b774a479428c97efa70819930895f7 lib/RDF/DOAP/Change/Addition.pm
+SHA1 f9096f25c4c9a7f3af1381195197d75fb9fd52da lib/RDF/DOAP/Change/Bugfix.pm
+SHA1 043952a43babf86013ef4561f55cf20666e8ae27 lib/RDF/DOAP/Change/Documentation.pm
+SHA1 86dd2b741615bec72696cab22a48a445eb26ee02 lib/RDF/DOAP/Change/Packaging.pm
+SHA1 ce4c5c30814df894bfe0afb33cade2faf9fae79a lib/RDF/DOAP/Change/Regression.pm
+SHA1 f08737be8131e7c711149e6b60cfc9888dd17cc1 lib/RDF/DOAP/Change/Removal.pm
+SHA1 fd547560477367c1222bc606647e1bcd640ee4be lib/RDF/DOAP/Change/SecurityFix.pm
+SHA1 e1312e6b52d620ba92f6a27c77053df1fb0550dd lib/RDF/DOAP/Change/SecurityRegression.pm
+SHA1 0d04b097e3866acd1d2ba00e8f3a49fc155ba940 lib/RDF/DOAP/Change/Update.pm
+SHA1 19a316b3a9d186812a544a25ae49d7aaad0cfd4d lib/RDF/DOAP/ChangeSet.pm
+SHA1 28fb4f21b56c59eb09221af6335ab0f6ad205535 lib/RDF/DOAP/Issue.pm
+SHA1 d57e66aa5b3e38641cfb90cba66b2b20914c69be lib/RDF/DOAP/Person.pm
+SHA1 b8e8fe7d83f0f064cefffd55757e55363c4fde3d lib/RDF/DOAP/Project.pm
+SHA1 f1bbf1d464b9719a338d092a0fe4d99f7e79d364 lib/RDF/DOAP/Repository.pm
+SHA1 3c540d62599a129bc087632f744217bc6fa1587c lib/RDF/DOAP/Resource.pm
+SHA1 5de29908d5a92e79340d8900e6729693f06e2881 lib/RDF/DOAP/Types.pm
+SHA1 82f85c73af4767dcc53cba3f5b36912dac851bdd lib/RDF/DOAP/Utils.pm
+SHA1 04b197d09f34dff4228a9b8a8f05824ee6d8fae4 lib/RDF/DOAP/Version.pm
+SHA1 dcb3f8a91230793abb2b1434c880be9d0bb9dab2 t/01basic.t
+SHA1 8f1d523118941f262fd6358e99792eae438883c0 t/02changelog.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+iEYEARECAAYFAlIJVCkACgkQzr+BKGoqfTn9PgCfVngUa+BDiD6kwGN6DnIft/KK
+lGEAn1Q8D5VDCquXk2oehJas2iZkJ+be
+=Nps3
+-----END PGP SIGNATURE-----
