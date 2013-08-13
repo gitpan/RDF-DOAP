@@ -13,14 +13,14 @@
 	a                    doap:Project;
 	dc:contributor       <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap-deps:develop-recommendation [ doap-deps:on "Dist::Inkt 0.001"^^doap-deps:CpanId ];
-	doap-deps:runtime-requirement [
+	doap-deps:runtime-requirement [ doap-deps:on "perl 5.010"^^doap-deps:CpanId ], [
 		doap-deps:on "Types::Standard 0.022"^^doap-deps:CpanId;
 	], [ doap-deps:on "JSON 2.00"^^doap-deps:CpanId ], [ doap-deps:on "List::MoreUtils 0"^^doap-deps:CpanId ], [ doap-deps:on "Moose 2.0600"^^doap-deps:CpanId ], [
 		doap-deps:on "MooseX::AttributeTags 0.001"^^doap-deps:CpanId;
 	], [ doap-deps:on "RDF::Trine 1.000"^^doap-deps:CpanId ], [
 		doap-deps:on "match::simple 0.001"^^doap-deps:CpanId;
-	], [ doap-deps:on "perl 5.010"^^doap-deps:CpanId ];
-	doap-deps:test-requirement [ doap-deps:on "Test::More 0.96"^^doap-deps:CpanId ];
+	];
+	doap-deps:test-requirement [ doap-deps:on "Test::More 0.96"^^doap-deps:CpanId ], [ doap-deps:on "Test::LongString"^^doap-deps:CpanId ];
 	doap:bug-database    <http://rt.cpan.org/Dist/Display.html?Queue=RDF-DOAP>;
 	doap:created         "2013-08-11"^^xsd:date;
 	doap:developer       <http://purl.org/NET/cpan-uri/person/tobyink>;
@@ -30,7 +30,7 @@
 	doap:maintainer      <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap:name            "RDF-DOAP";
 	doap:programming-language "Perl";
-	doap:release         <http://purl.org/NET/cpan-uri/dist/RDF-DOAP/v_0-001>, <http://purl.org/NET/cpan-uri/dist/RDF-DOAP/v_0-002>, <http://purl.org/NET/cpan-uri/dist/RDF-DOAP/v_0-003>;
+	doap:release         <http://purl.org/NET/cpan-uri/dist/RDF-DOAP/v_0-001>, <http://purl.org/NET/cpan-uri/dist/RDF-DOAP/v_0-002>, <http://purl.org/NET/cpan-uri/dist/RDF-DOAP/v_0-003>, <http://purl.org/NET/cpan-uri/dist/RDF-DOAP/v_0-004>;
 	doap:repository      [
 		a doap:GitRepository;
 		doap:browse <https://github.com/tobyink/p5-rdf-doap>;
@@ -73,6 +73,26 @@
 	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/RDF-DOAP-0.003.tar.gz>;
 	doap:revision        "0.003"^^xsd:string.
+
+<http://purl.org/NET/cpan-uri/dist/RDF-DOAP/v_0-004>
+	a                    doap:Version;
+	dc:identifier        "RDF-DOAP-0.004"^^xsd:string;
+	dc:issued            "2013-08-13"^^xsd:date;
+	doap-changeset:changeset [
+		doap-changeset:item [
+			a doap-changeset:Bugfix;
+			rdfs:label "Fix `rdf_get`, `rdf_get_literal` and `rdf_get_uri` methods.";
+		], [
+			a doap-changeset:Change;
+			rdfs:label "Improved stringification for RDF::DOAP::Person.";
+		], [
+			a doap-changeset:Packaging;
+			rdfs:label "Add missing dep on Test::LongString.";
+		];
+	];
+	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
+	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/RDF-DOAP-0.004.tar.gz>;
+	doap:revision        "0.004"^^xsd:string.
 
 <http://purl.org/NET/cpan-uri/person/tobyink>
 	a                    foaf:Person;
