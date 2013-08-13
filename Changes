@@ -6,6 +6,11 @@ Home page:    <https://metacpan.org/release/RDF-DOAP>
 Bug tracker:  <http://rt.cpan.org/Dist/Display.html?Queue=RDF-DOAP>
 Maintainer:   Toby Inkster <mailto:tobyink@cpan.org>
 
+0.005  2013-08-13
+
+ - (Bugfix) Further fix for `rdf_get`, `rdf_get_literal` and `rdf_get_uri`
+   methods.
+
 0.004  2013-08-13
 
  - (Bugfix) Fix `rdf_get`, `rdf_get_literal` and `rdf_get_uri` methods.

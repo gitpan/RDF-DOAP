@@ -1,7 +1,7 @@
 package RDF::DOAP::Resource;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = 0.004;
+our $VERSION   = 0.005;
 
 use Moose;
 
@@ -113,7 +113,7 @@ sub rdf_get
 	croak "This object cannot rdf_get; stopped"
 		unless $self->has_rdf_model && $self->has_rdf_about;
 	
-	my @values = $self->rdf_model->objects_for_predicate_list(@_);
+	my @values = $self->rdf_model->objects_for_predicate_list($self->rdf_about, @_);
 	wantarray ? @values : $values[0];
 }
 
