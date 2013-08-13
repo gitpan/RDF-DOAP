@@ -30,7 +30,7 @@
 	doap:maintainer      <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap:name            "RDF-DOAP";
 	doap:programming-language "Perl";
-	doap:release         <http://purl.org/NET/cpan-uri/dist/RDF-DOAP/v_0-001>, <http://purl.org/NET/cpan-uri/dist/RDF-DOAP/v_0-002>;
+	doap:release         <http://purl.org/NET/cpan-uri/dist/RDF-DOAP/v_0-001>, <http://purl.org/NET/cpan-uri/dist/RDF-DOAP/v_0-002>, <http://purl.org/NET/cpan-uri/dist/RDF-DOAP/v_0-003>;
 	doap:repository      [
 		a doap:GitRepository;
 		doap:browse <https://github.com/tobyink/p5-rdf-doap>;
@@ -59,6 +59,20 @@
 	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/RDF-DOAP-0.002.tar.gz>;
 	doap:revision        "0.002"^^xsd:string.
+
+<http://purl.org/NET/cpan-uri/dist/RDF-DOAP/v_0-003>
+	a                    doap:Version;
+	dc:identifier        "RDF-DOAP-0.003"^^xsd:string;
+	dc:issued            "2013-08-13"^^xsd:date;
+	doap-changeset:changeset [
+		doap-changeset:item [
+			a doap-changeset:Addition;
+			rdfs:label "RDF::DOAP::Resource now has `rdf_get`, `rdf_get_literal` and `rdf_get_uri` methods.";
+		];
+	];
+	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
+	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/RDF-DOAP-0.003.tar.gz>;
+	doap:revision        "0.003"^^xsd:string.
 
 <http://purl.org/NET/cpan-uri/person/tobyink>
 	a                    foaf:Person;

@@ -1,10 +1,11 @@
 package RDF::DOAP::Resource;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = 0.002;
+our $VERSION   = 0.003;
 
 use Moose;
 
+use Carp;
 use Types::Standard -types;
 use RDF::DOAP::Types -types;
 use RDF::DOAP::Utils -traits;
@@ -104,6 +105,30 @@ sub rdf_load
 	my $self = $objects{ refaddr($model) }{ $identifier } = $class->new(%args);
 	weaken($objects{ refaddr($model) }{ $identifier });
 	return $self;
+}
+
+sub rdf_get
+{
+	my $self = shift;
+	croak "This object cannot rdf_get; stopped"
+		unless $self->has_rdf_model && $self->has_rdf_about;
+	
+	my @values = $self->model->objects_for_predicate_list(@_);
+	wantarray ? @values : $values[0];
+}
+
+sub rdf_get_literal
+{
+	my $self = shift;	
+	my @values = grep $_->is_literal, $self->rdf_get(@_);
+	wantarray ? @values : $values[0];
+}
+
+sub rdf_get_uri
+{
+	my $self = shift;	
+	my @values = grep $_->is_resource, $self->rdf_get(@_);
+	wantarray ? @values : $values[0];
 }
 
 sub TO_JSON
