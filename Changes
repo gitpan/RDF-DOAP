@@ -6,30 +6,38 @@ Home page:    <https://metacpan.org/release/RDF-DOAP>
 Bug tracker:  <http://rt.cpan.org/Dist/Display.html?Queue=RDF-DOAP>
 Maintainer:   Toby Inkster (TOBYINK) <tobyink@cpan.org>
 
+0.007	2013-09-03
+
+ - Make sure entries within changelog groups are lexicograpically sorted.
+
 0.006	2013-09-03
 
- - () 
- - (Update) New roles added for dcs:BackCompat and dcs:Tests.
+ - Updated: New roles added for dcs:BackCompat and dcs:Tests.
 
 0.005	2013-08-13
 
- - (Bugfix) Further fix for `rdf_get`, `rdf_get_literal` and `rdf_get_uri`
-   methods.
+ [ Bug Fixes ]
+ - Further fix for `rdf_get`, `rdf_get_literal` and `rdf_get_uri` methods.
 
 0.004	2013-08-13
 
- - (Bugfix) Fix `rdf_get`, `rdf_get_literal` and `rdf_get_uri` methods.
- - (Change) Improved stringification for RDF::DOAP::Person.
- - (Packaging) Add missing dep on Test::LongString.
+ [ Bug Fixes ]
+ - Fix `rdf_get`, `rdf_get_literal` and `rdf_get_uri` methods.
+
+ [ Packaging ]
+ - Add missing dep on Test::LongString.
+
+ [ Other ]
+ - Improved stringification for RDF::DOAP::Person.
 
 0.003	2013-08-13
 
- - (Addition) RDF::DOAP::Resource now has `rdf_get`, `rdf_get_literal` and
+ - Added: RDF::DOAP::Resource now has `rdf_get`, `rdf_get_literal` and
    `rdf_get_uri` methods.
 
 0.002	2013-08-12
 
- - (Packaging) Various mini fixes.
+ [ Packaging ]
+ - Various mini fixes.
 
 0.001	2013-08-12	Initial release
-

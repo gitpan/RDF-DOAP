@@ -1,7 +1,7 @@
 package RDF::DOAP::Change::Bugfix;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = 0.006;
+our $VERSION   = 0.007;
 
 use Moose::Role;
 requires qw( rdf_about rdf_model );
@@ -42,15 +42,19 @@ override changelog_links => sub
 	return (@pages, super());
 };
 
+my %ABBREV = (
+	GITHUB    => 'GH',
+	RT        => 'RT',
+);
 override changelog_lines => sub
 {
 	my $self = shift;
 	my @lines = super();
-	my @added =
-		map "Fixes #$_.",
-		grep defined,
-		map $_->id,
-		@{ $self->fixes };
+	my @added = map {
+		!defined($_->id)                      ? () :
+		($_->rdf_about =~ /\b(RT|GITHUB)\b/i) ? "Fixes $ABBREV{uc($1)}#$_->{id}." :
+		"Fixes #$_->{id}."
+	} @{ $self->fixes };
 	splice(@lines, 1, 0, @added) if @added;
 	return @lines;
 };
