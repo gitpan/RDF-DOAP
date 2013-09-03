@@ -1,7 +1,7 @@
 package RDF::DOAP::Utils;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = 0.007;
+our $VERSION   = 0.008;
 
 use strict;
 use warnings;
@@ -37,7 +37,7 @@ sub _gather_objects
 	if (ArrayRef->check($self))
 	{
 		return uniq(
-			map _gather_objects($_, $relation), @$self
+			grep defined, map _gather_objects($_, $relation), grep defined, @$self
 		);
 	}
 	

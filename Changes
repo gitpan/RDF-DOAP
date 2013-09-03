@@ -6,6 +6,11 @@ Home page:    <https://metacpan.org/release/RDF-DOAP>
 Bug tracker:  <http://rt.cpan.org/Dist/Display.html?Queue=RDF-DOAP>
 Maintainer:   Toby Inkster (TOBYINK) <tobyink@cpan.org>
 
+0.008	2013-09-03
+
+ [ Bug Fixes ]
+ - Fix some 'uninitialized' warnings.
+
 0.007	2013-09-03
 
  - Make sure entries within changelog groups are lexicograpically sorted.
