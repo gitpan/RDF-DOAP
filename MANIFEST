@@ -5,12 +5,12 @@ Changes
 LICENSE
 MANIFEST
 META.json
-META.ttl
 META.yml
 Makefile.PL
 README
 SIGNATURE
 dist.ini
+doap.ttl
 examples/changelog.pl
 examples/credits.pl
 examples/gnome-data.pl
@@ -19,6 +19,7 @@ examples/simple.pl
 lib/RDF/DOAP.pm
 lib/RDF/DOAP/Change.pm
 lib/RDF/DOAP/Change/Addition.pm
+lib/RDF/DOAP/Change/BackCompat.pm
 lib/RDF/DOAP/Change/Bugfix.pm
 lib/RDF/DOAP/Change/Documentation.pm
 lib/RDF/DOAP/Change/Packaging.pm
@@ -26,6 +27,7 @@ lib/RDF/DOAP/Change/Regression.pm
 lib/RDF/DOAP/Change/Removal.pm
 lib/RDF/DOAP/Change/SecurityFix.pm
 lib/RDF/DOAP/Change/SecurityRegression.pm
+lib/RDF/DOAP/Change/Tests.pm
 lib/RDF/DOAP/Change/Update.pm
 lib/RDF/DOAP/ChangeSet.pm
 lib/RDF/DOAP/Issue.pm

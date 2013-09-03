@@ -1,7 +1,7 @@
 package RDF::DOAP::Resource;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = 0.005;
+our $VERSION   = 0.006;
 
 use Moose;
 
@@ -160,6 +160,16 @@ sub dump_json
 		shift(),
 		{ pretty => 1, canonical => 1, convert_blessed => 1 },
 	);
+}
+
+sub isa
+{
+	my $self = shift;
+	
+	return grep($_[0]->equal($_), @{$self->rdf_type})
+		if Identifier->check(@_);
+	
+	$self->SUPER::isa(@_);
 }
 
 1;

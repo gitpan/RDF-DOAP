@@ -1,7 +1,7 @@
 package RDF::DOAP::Change;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = 0.005;
+our $VERSION   = 0.006;
 
 use Moose;
 extends qw(RDF::DOAP::Resource);
@@ -72,9 +72,18 @@ sub changelog_entry
 sub changelog_lines
 {
 	my $self = shift;
-	my @type = sort map $_->uri =~ m{(\w+)$}, @{ $self->rdf_type };
+	my ($notype) = @_;
 	
-	my @lines = "(@type) " . $self->label;
+	my @lines;
+	if ($notype)
+	{
+		@lines = $self->label;
+	}
+	else
+	{
+		my @type = sort map $_->uri =~ m{(\w+)$}, @{ $self->rdf_type };
+		@lines = "(@type) " . $self->label;
+	}
 	
 	for my $person (uniq sort @{$self->blame||[]}, @{$self->thanks||[]})
 	{
