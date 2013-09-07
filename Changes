@@ -6,6 +6,11 @@ Home page:    <https://metacpan.org/release/RDF-DOAP>
 Bug tracker:  <http://rt.cpan.org/Dist/Display.html?Queue=RDF-DOAP>
 Maintainer:   Toby Inkster (TOBYINK) <tobyink@cpan.org>
 
+0.009	2013-09-07
+
+ [ Bug Fixes ]
+ - Fix entries in changelog for changes with no explicit rdf:type.
+
 0.008	2013-09-03
 
  [ Bug Fixes ]
