@@ -7,7 +7,7 @@ my $meta = {
   "abstract"       => "an object-oriented interface for DOAP (Description of a Project) data",
   "author"         => ["Toby Inkster (TOBYINK) <tobyink\@cpan.org>"],
   "dynamic_config" => 0,
-  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.009, CPAN::Meta::Converter version 2.120921",
+  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.013, CPAN::Meta::Converter version 2.120921",
   "keywords"       => [],
   "license"        => ["perl_5"],
   "meta-spec"      => {
@@ -21,6 +21,7 @@ my $meta = {
                         develop   => { recommends => { "Dist::Inkt" => 0.001 } },
                         runtime   => {
                                        requires => {
+                                         "Exporter::Tiny" => 0.026,
                                          "JSON" => "2.00",
                                          "List::MoreUtils" => 0,
                                          "match::simple" => 0.001,
@@ -34,31 +35,31 @@ my $meta = {
                         test      => { requires => { "Test::LongString" => 0, "Test::More" => 0.96 } },
                       },
   "provides"       => {
-                        "RDF::DOAP"                             => { file => "lib/RDF/DOAP.pm", version => 0.009 },
-                        "RDF::DOAP::Change"                     => { file => "lib/RDF/DOAP/Change.pm", version => 0.009 },
-                        "RDF::DOAP::Change::Addition"           => { file => "lib/RDF/DOAP/Change/Addition.pm", version => 0.009 },
-                        "RDF::DOAP::Change::BackCompat"         => { file => "lib/RDF/DOAP/Change/BackCompat.pm", version => 0.009 },
-                        "RDF::DOAP::Change::Bugfix"             => { file => "lib/RDF/DOAP/Change/Bugfix.pm", version => 0.009 },
-                        "RDF::DOAP::Change::Documentation"      => { file => "lib/RDF/DOAP/Change/Documentation.pm", version => 0.009 },
-                        "RDF::DOAP::Change::Packaging"          => { file => "lib/RDF/DOAP/Change/Packaging.pm", version => 0.009 },
-                        "RDF::DOAP::Change::Regression"         => { file => "lib/RDF/DOAP/Change/Regression.pm", version => 0.009 },
-                        "RDF::DOAP::Change::Removal"            => { file => "lib/RDF/DOAP/Change/Removal.pm", version => 0.009 },
-                        "RDF::DOAP::Change::SecurityFix"        => { file => "lib/RDF/DOAP/Change/SecurityFix.pm", version => 0.009 },
+                        "RDF::DOAP"                             => { file => "lib/RDF/DOAP.pm", version => "0.010" },
+                        "RDF::DOAP::Change"                     => { file => "lib/RDF/DOAP/Change.pm", version => "0.010" },
+                        "RDF::DOAP::Change::Addition"           => { file => "lib/RDF/DOAP/Change/Addition.pm", version => "0.010" },
+                        "RDF::DOAP::Change::BackCompat"         => { file => "lib/RDF/DOAP/Change/BackCompat.pm", version => "0.010" },
+                        "RDF::DOAP::Change::Bugfix"             => { file => "lib/RDF/DOAP/Change/Bugfix.pm", version => "0.010" },
+                        "RDF::DOAP::Change::Documentation"      => { file => "lib/RDF/DOAP/Change/Documentation.pm", version => "0.010" },
+                        "RDF::DOAP::Change::Packaging"          => { file => "lib/RDF/DOAP/Change/Packaging.pm", version => "0.010" },
+                        "RDF::DOAP::Change::Regression"         => { file => "lib/RDF/DOAP/Change/Regression.pm", version => "0.010" },
+                        "RDF::DOAP::Change::Removal"            => { file => "lib/RDF/DOAP/Change/Removal.pm", version => "0.010" },
+                        "RDF::DOAP::Change::SecurityFix"        => { file => "lib/RDF/DOAP/Change/SecurityFix.pm", version => "0.010" },
                         "RDF::DOAP::Change::SecurityRegression" => {
                                                                      file => "lib/RDF/DOAP/Change/SecurityRegression.pm",
-                                                                     version => 0.009,
+                                                                     version => "0.010",
                                                                    },
-                        "RDF::DOAP::Change::Tests"              => { file => "lib/RDF/DOAP/Change/Tests.pm", version => 0.009 },
-                        "RDF::DOAP::Change::Update"             => { file => "lib/RDF/DOAP/Change/Update.pm", version => 0.009 },
-                        "RDF::DOAP::ChangeSet"                  => { file => "lib/RDF/DOAP/ChangeSet.pm", version => 0.009 },
-                        "RDF::DOAP::Issue"                      => { file => "lib/RDF/DOAP/Issue.pm", version => 0.009 },
-                        "RDF::DOAP::Person"                     => { file => "lib/RDF/DOAP/Person.pm", version => 0.009 },
-                        "RDF::DOAP::Project"                    => { file => "lib/RDF/DOAP/Project.pm", version => 0.009 },
-                        "RDF::DOAP::Repository"                 => { file => "lib/RDF/DOAP/Repository.pm", version => 0.009 },
-                        "RDF::DOAP::Resource"                   => { file => "lib/RDF/DOAP/Resource.pm", version => 0.009 },
-                        "RDF::DOAP::Types"                      => { file => "lib/RDF/DOAP/Types.pm", version => 0.009 },
-                        "RDF::DOAP::Utils"                      => { file => "lib/RDF/DOAP/Utils.pm", version => 0.009 },
-                        "RDF::DOAP::Version"                    => { file => "lib/RDF/DOAP/Version.pm", version => 0.009 },
+                        "RDF::DOAP::Change::Tests"              => { file => "lib/RDF/DOAP/Change/Tests.pm", version => "0.010" },
+                        "RDF::DOAP::Change::Update"             => { file => "lib/RDF/DOAP/Change/Update.pm", version => "0.010" },
+                        "RDF::DOAP::ChangeSet"                  => { file => "lib/RDF/DOAP/ChangeSet.pm", version => "0.010" },
+                        "RDF::DOAP::Issue"                      => { file => "lib/RDF/DOAP/Issue.pm", version => "0.010" },
+                        "RDF::DOAP::Person"                     => { file => "lib/RDF/DOAP/Person.pm", version => "0.010" },
+                        "RDF::DOAP::Project"                    => { file => "lib/RDF/DOAP/Project.pm", version => "0.010" },
+                        "RDF::DOAP::Repository"                 => { file => "lib/RDF/DOAP/Repository.pm", version => "0.010" },
+                        "RDF::DOAP::Resource"                   => { file => "lib/RDF/DOAP/Resource.pm", version => "0.010" },
+                        "RDF::DOAP::Types"                      => { file => "lib/RDF/DOAP/Types.pm", version => "0.010" },
+                        "RDF::DOAP::Utils"                      => { file => "lib/RDF/DOAP/Utils.pm", version => "0.010" },
+                        "RDF::DOAP::Version"                    => { file => "lib/RDF/DOAP/Version.pm", version => "0.010" },
                       },
   "release_status" => "stable",
   "resources"      => {
@@ -68,7 +69,7 @@ my $meta = {
                         repository   => { type => "git", web => "https://github.com/tobyink/p5-rdf-doap" },
                         X_identifier => "http://purl.org/NET/cpan-uri/dist/RDF-DOAP/project",
                       },
-  "version"        => 0.009,
+  "version"        => "0.010",
 };
 
 my %dynamic_config;
@@ -92,6 +93,7 @@ sub deps
 	{
 		for my $dep (keys %{$meta->{prereqs}{$stage}{requires}})
 		{
+			next if $dep eq 'perl';
 			my $ver = $meta->{prereqs}{$stage}{requires}{$dep};
 			$r{$dep} = $ver if !exists($r{$dep}) || $ver >= $r{$dep};
 		}
@@ -124,16 +126,19 @@ else
 }
 
 {
-	my $minperl = delete $WriteMakefileArgs{PREREQ_PM}{perl};
-	exists($WriteMakefileArgs{$_}) && delete($WriteMakefileArgs{$_}{perl})
-		for qw(BUILD_REQUIRES TEST_REQUIRES CONFIGURE_REQUIRES);
-	if ($minperl and $EUMM >= 6.48)
+	my ($minperl) = reverse sort(
+		grep defined && /^[0-9]+(\.[0-9]+)?$/,
+		map $meta->{prereqs}{$_}{requires}{perl},
+		qw( configure build runtime )
+	);
+	
+	if (defined($minperl))
 	{
-		$WriteMakefileArgs{MIN_PERL_VERSION} ||= $minperl;
-	}
-	elsif ($minperl)
-	{
-		die "Need Perl >= $minperl" unless $] >= $minperl;
+		die "Installing $meta->{name} requires Perl >= $minperl"
+			unless $] >= $minperl;
+		
+		$WriteMakefileArgs{MIN_PERL_VERSION} ||= $minperl
+			if $EUMM >= 6.48;
 	}
 }
 

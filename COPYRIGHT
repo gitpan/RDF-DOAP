@@ -34,6 +34,7 @@ Copyright: Copyright 2013 Toby Inkster.
 License: GPL-1.0+ or Artistic-1.0
 
 Files: CONTRIBUTING
+ INSTALL
  LICENSE
  examples/changelog.pl
  examples/credits.pl
