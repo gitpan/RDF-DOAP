@@ -1,12 +1,11 @@
 package RDF::DOAP::Resource;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.010';
+our $VERSION   = '0.011';
 
 use Moose;
 
 use Carp;
-use Types::Standard -types;
 use RDF::DOAP::Types -types;
 use RDF::DOAP::Utils -traits;
 use Scalar::Util qw( weaken refaddr );

@@ -1,13 +1,11 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: RDF-DOAP
-Upstream-Contact: Toby Inkster (TOBYINK) <tobyink@cpan.org>
+Upstream-Contact:  and Toby Inkster (TOBYINK) <tobyink@cpan.org>
 Source: https://metacpan.org/release/RDF-DOAP
 
 Files: Changes
  META.json
  META.yml
- Makefile.PL
- dist.ini
  doap.ttl
  lib/RDF/DOAP/Change.pm
  lib/RDF/DOAP/Change/Addition.pm
@@ -30,7 +28,7 @@ Files: Changes
  lib/RDF/DOAP/Types.pm
  lib/RDF/DOAP/Utils.pm
  lib/RDF/DOAP/Version.pm
-Copyright: Copyright 2013 Toby Inkster.
+Copyright: Copyright 2014 Toby Inkster.
 License: GPL-1.0+ or Artistic-1.0
 
 Files: CONTRIBUTING
@@ -57,15 +55,20 @@ Files: COPYRIGHT
 Copyright: None
 License: public-domain
 
+Files: Makefile.PL
+ dist.ini
+Copyright: Copyright 2013 Toby Inkster.
+License: GPL-1.0+ or Artistic-1.0
+
 License: Artistic-1.0
- This software is Copyright (c) 2013 by the copyright holder(s).
+ This software is Copyright (c) 2014 by the copyright holder(s).
  
  This is free software, licensed under:
  
    The Artistic License 1.0
 
 License: GPL-1.0
- This software is Copyright (c) 2013 by the copyright holder(s).
+ This software is Copyright (c) 2014 by the copyright holder(s).
  
  This is free software, licensed under:
  

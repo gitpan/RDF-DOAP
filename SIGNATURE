@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.70.
+signed via the Module::Signature module, version 0.73.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,52 +14,52 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 294505f858f11dd062e9916e3f50d88210a9ef54 CONTRIBUTING
-SHA1 8a692149f010158626ecc9a686879b195444e330 COPYRIGHT
+SHA1 33317486c4fa2cf7fec85bf92ed38ac0f64233a0 CONTRIBUTING
+SHA1 f19d1b9bbad4ade5c695fe2bf5f31339913d6c6f COPYRIGHT
 SHA1 6bd7b17d81be63d08d4efa6cb80106e72887842c CREDITS
-SHA1 78d2111502aaa666324a1e41c53c6927ffc8c882 Changes
+SHA1 c3e070a56664b2dab9b1972e615bb4f752a25a9a Changes
 SHA1 c1ff8082c70be27ce35819ee08e7712b2e521414 INSTALL
-SHA1 ec5a7b4f3023f03ebf821b57690758f7e6f3ae2a LICENSE
+SHA1 34f5e12514b91055de4b164a1f2327ef5c30ba53 LICENSE
 SHA1 d1b46bbf847539765b0717caf468f1de9791ef1a MANIFEST
-SHA1 66d9a6f2cce77d0c469a123a0079bbdcbde4b783 META.json
-SHA1 503db1e81808a0e12f2c03f54a88fd66861db9c4 META.yml
-SHA1 6167f3cf9ba26db2b140757b82d97e100caf176a Makefile.PL
+SHA1 58d93970dac854888c1f0a045af51e58a06b56e5 META.json
+SHA1 3096ed66622d0a4389f6f407becb4293411aa9c7 META.yml
+SHA1 5cfc635603280efd12128d995f24e31f7076932e Makefile.PL
 SHA1 8b1b5f6a85a948a1b76f6d343670d08a2879cb29 README
 SHA1 72ddfd0304a8e1c9bed4e1eb34cd1f010f9dc696 dist.ini
-SHA1 512ea718f8a9da0c633667c610beebd6ef37ec1d doap.ttl
+SHA1 f955f9d321ee49e545909d5ef2777dc59af5af9f doap.ttl
 SHA1 4891c973c47a3e33389d6c91141e99eb796fcc87 examples/changelog.pl
 SHA1 7725ba71ddd45085a21c7cbb30186e9fb3ea4d0c examples/credits.pl
 SHA1 f37c95bd65b4b7f6a6671680e2385a09549f024b examples/gnome-data.pl
 SHA1 f4a04524254b5695b5f35620d1de67462b712041 examples/moose-data.pl
 SHA1 67a7f017978c49603c7542929e34cb8d62b067e2 examples/simple.pl
-SHA1 d244cec0074ef3f492d6c81d71e6e1099fa5c338 lib/RDF/DOAP.pm
-SHA1 a87eff09559af9d3c94b8b90b7f180bedd9e8bdf lib/RDF/DOAP/Change.pm
-SHA1 75cb76e327612ba3a45fa0cb14312af7f57bbe42 lib/RDF/DOAP/Change/Addition.pm
-SHA1 9a69db357d947b5d60897b04d518e0c55d9ceeef lib/RDF/DOAP/Change/BackCompat.pm
-SHA1 70cfca0ecaeba828a3f30f540c76de5bebac35ef lib/RDF/DOAP/Change/Bugfix.pm
-SHA1 635a26098ab4351cf0f759c6add64b87e2bd5c2f lib/RDF/DOAP/Change/Documentation.pm
-SHA1 48f9d9ed827c9289fc8fe19c9f0b4d86395b6d51 lib/RDF/DOAP/Change/Packaging.pm
-SHA1 3cba43db16c1814d2471a9680200381e157c9edc lib/RDF/DOAP/Change/Regression.pm
-SHA1 cd938527ec721df4722356fd3dc197adc6733da8 lib/RDF/DOAP/Change/Removal.pm
-SHA1 56a248d1ef421b8f852eaa5e254f14deb0a1edc3 lib/RDF/DOAP/Change/SecurityFix.pm
-SHA1 c36a993314d9c5d3107000c4c1df75714792c887 lib/RDF/DOAP/Change/SecurityRegression.pm
-SHA1 ca131875b171637913f0d167eced3b69f293bb2c lib/RDF/DOAP/Change/Tests.pm
-SHA1 27e1a167618ac8d4a4f9eb9e02e708eedbf82a4a lib/RDF/DOAP/Change/Update.pm
-SHA1 b90cf0d36ad3f66fa991533883db8d973185e1e8 lib/RDF/DOAP/ChangeSet.pm
-SHA1 e923d26e40425eba5e7b1ea87f16c339a6a0f66a lib/RDF/DOAP/Issue.pm
-SHA1 c700e9d926fb62b760ae788ff91090ac743a59f5 lib/RDF/DOAP/Person.pm
-SHA1 d5089e37716ae2a2b8425f37c8fc89df4113f5ab lib/RDF/DOAP/Project.pm
-SHA1 df3e83319a62b0975e4d056b8fbd05f64f8c9e3d lib/RDF/DOAP/Repository.pm
-SHA1 aed6be971f12cd93349f49aa3a34f2f248192c8e lib/RDF/DOAP/Resource.pm
-SHA1 61ec5f9878de55cb5f33f461d0815178077420aa lib/RDF/DOAP/Types.pm
-SHA1 aa3e021f82ab57a39b8709a5fa791735033f5ba8 lib/RDF/DOAP/Utils.pm
-SHA1 7799e454ff50386c2193550454b08035ad7f6df6 lib/RDF/DOAP/Version.pm
+SHA1 d745faefde7d3fe49658071095e9660509c78fc0 lib/RDF/DOAP.pm
+SHA1 c711ee010dcd1794705eb752e2e2d0956281a4a4 lib/RDF/DOAP/Change.pm
+SHA1 86c47fcffb692a6164e8778d3d635e31508eca7d lib/RDF/DOAP/Change/Addition.pm
+SHA1 364be20afd84b57b7cd4bc58a5cf9ddb3bc6cd75 lib/RDF/DOAP/Change/BackCompat.pm
+SHA1 a24263f56131062fab8f73e7fd0552c8bc0949f4 lib/RDF/DOAP/Change/Bugfix.pm
+SHA1 28344c36912521b127f2fb86abfe06306c4530bc lib/RDF/DOAP/Change/Documentation.pm
+SHA1 81147460d9adc3ecb2a5bf3e4ac74d041edcf8bc lib/RDF/DOAP/Change/Packaging.pm
+SHA1 249929c8ce753f3994e09ae98557d99bbe110ddb lib/RDF/DOAP/Change/Regression.pm
+SHA1 6b9f0818d8dc82f68cdaa2c1a212448090fc4cdd lib/RDF/DOAP/Change/Removal.pm
+SHA1 9e2ba217da7495470d398e8a91ab495794c7cb4e lib/RDF/DOAP/Change/SecurityFix.pm
+SHA1 3fa6935425e1afac5b6d4f507c3a89fdb29dc8be lib/RDF/DOAP/Change/SecurityRegression.pm
+SHA1 b7dbd68f7e09702e11a3da0f6739733f09d01c58 lib/RDF/DOAP/Change/Tests.pm
+SHA1 a7b10268ff0c125505aa4afa3a520964afffc99e lib/RDF/DOAP/Change/Update.pm
+SHA1 84359827ba1d8ed2b7a4286c873d28cf474d2ccc lib/RDF/DOAP/ChangeSet.pm
+SHA1 36d7be11f5cab547d3872e7c37a851dd1f67a90f lib/RDF/DOAP/Issue.pm
+SHA1 a44b2cb4e056c1724adb96522e847b1b668ffc3b lib/RDF/DOAP/Person.pm
+SHA1 393799d6cc694dc43d174503da108a346d9fac4d lib/RDF/DOAP/Project.pm
+SHA1 d913cbb4b97bbef5b0345bfdaeb048413fa31ed5 lib/RDF/DOAP/Repository.pm
+SHA1 5f6e202f27f5d871a06cc3f143792973df495a9f lib/RDF/DOAP/Resource.pm
+SHA1 6e106d4c49156eb4ade8c7a6a535d2c726f42a7a lib/RDF/DOAP/Types.pm
+SHA1 f83001ec6761cd041d2323d327791a3a7572bd63 lib/RDF/DOAP/Utils.pm
+SHA1 39be4acb73d5ffcdc69523e530891bab142fe928 lib/RDF/DOAP/Version.pm
 SHA1 dcb3f8a91230793abb2b1434c880be9d0bb9dab2 t/01basic.t
 SHA1 5a326de5c4585e730714d3ab37411564285f5783 t/02changelog.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.12 (GNU/Linux)
+Version: GnuPG v1
 
-iEYEARECAAYFAlJJ45MACgkQzr+BKGoqfTm11wCgnefTKVykatrNAutb6V0oSYCh
-a48AoKfZVu0B/m8biCZhFySt8J+yt41c
-=nrEk
+iEYEARECAAYFAlPqmrIACgkQzr+BKGoqfTnkUQCgkg6Vn3IL4cr2NL0ChNA1AAjV
+/dcAoJ4c8+WLkllZX7mwLtdzAWiWfjNj
+=FZBv
 -----END PGP SIGNATURE-----

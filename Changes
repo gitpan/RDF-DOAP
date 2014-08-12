@@ -6,6 +6,11 @@ Home page:    <https://metacpan.org/release/RDF-DOAP>
 Bug tracker:  <http://rt.cpan.org/Dist/Display.html?Queue=RDF-DOAP>
 Maintainer:   Toby Inkster (TOBYINK) <tobyink@cpan.org>
 
+0.011	2014-08-12
+
+ [ Bug Fixes ]
+ - Don't import Types::Standard type constraints twice over.
+
 0.010	2013-09-30
 
  [ Bug Fixes ]
