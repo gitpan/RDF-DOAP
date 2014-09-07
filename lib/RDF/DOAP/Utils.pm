@@ -1,7 +1,7 @@
 package RDF::DOAP::Utils;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.011';
+our $VERSION   = '0.012';
 
 use strict;
 use warnings;
@@ -67,7 +67,7 @@ sub _gather_objects
 sub gather_objects
 {
 	local %seen;
-	grep defined, _gather_objects(@_);
+	grep ref, _gather_objects(@_);
 }
 
 1;
